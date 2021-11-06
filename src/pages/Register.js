@@ -14,7 +14,7 @@ const Register = () => {
     if (context.user) {
       navigate("/", { replace: true });
     }
-  }, []);
+  }, [context.user, navigate]);
 
   const [errors, setErrors] = useState({});
 

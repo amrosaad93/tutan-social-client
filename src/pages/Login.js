@@ -14,7 +14,7 @@ const Login = () => {
     if (context.user) {
       navigate("/", { replace: true });
     }
-  }, []);
+  }, [context.user, navigate]);
 
   const [errors, setErrors] = useState({});
 
